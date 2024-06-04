@@ -15,7 +15,7 @@ export default function Navbar() {
     
     const logout = async () => {
         try {
-            await axios.post("http://localhost:8080/api/auth/logout", null, { withCredentials: true });
+            await axios.post("https://revamped-blog-spring-boot-react-mysql.onrender.com/api/auth/logout", null, { withCredentials: true });
             Cookies.remove('jwt');
             toast.success("User logged off successfully. Thanks for visiting!");
             setUser("");

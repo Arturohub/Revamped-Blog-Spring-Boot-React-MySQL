@@ -9,7 +9,7 @@ const LikeButton = ({ postId, userId }) => {
 
     const handleLike = async () => {
         try {
-            await axios.post(`http://localhost:8080/api/user/likes/${userId}/${postId}`, {}, {
+            await axios.post(`https://revamped-blog-spring-boot-react-mysql.onrender.com/api/user/likes/${userId}/${postId}`, {}, {
                 headers: {'Authorization': `Bearer ${Cookies.get('jwt')}`}
             });
             setIsLiked(true);

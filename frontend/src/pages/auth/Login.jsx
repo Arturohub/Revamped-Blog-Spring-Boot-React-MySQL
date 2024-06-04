@@ -19,7 +19,7 @@ export default function Login() {
         setIsLoading(true);
         
         try {
-            const response = await axios.post("http://localhost:8080/api/auth/login", {
+            const response = await axios.post("https://revamped-blog-spring-boot-react-mysql.onrender.com/api/auth/login", {
                 username: username,
                 password: password
             }, {

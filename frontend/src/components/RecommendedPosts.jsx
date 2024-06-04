@@ -8,7 +8,7 @@ const RelatedPosts = ({ id, category }) => {
     useEffect(() => {
         const fetchRelatedPosts = async () => {
             try {
-                const response = await axios.get(`http://localhost:8080/api/blog`);
+                const response = await axios.get(`https://revamped-blog-spring-boot-react-mysql.onrender.com/api/blog`);
                 const filteredByCategory = response.data.filter(post => post.category === category && post.id !== id);
                 const limitedPosts = filteredByCategory.slice(0, 5);
                 setRelatedPosts(limitedPosts);

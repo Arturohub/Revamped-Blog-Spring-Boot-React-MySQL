@@ -50,7 +50,7 @@ export default function Register(){
         }
 
         try {
-            const response = await axios.post("http://localhost:8080/api/auth/register", {
+            const response = await axios.post("https://revamped-blog-spring-boot-react-mysql.onrender.com/api/auth/register", {
                 username: username,
                 email: email,
                 password: password,

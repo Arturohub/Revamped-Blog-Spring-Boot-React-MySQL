@@ -17,10 +17,10 @@ export default function Blog() {
     const getBlogs = async () => {
         setIsLoading(true);
         try {
-            const response = await axios.get("http://localhost:8080/api/blog");
+            const response = await axios.get("https://revamped-blog-spring-boot-react-mysql.onrender.com/api/blog");
             const sortedBlogs = response.data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
             const blogsWithLikes = await Promise.all(sortedBlogs.map(async blog => {
-                const likesResponse = await axios.get(`http://localhost:8080/api/likes/count/${blog.id}`);
+                const likesResponse = await axios.get(`https://revamped-blog-spring-boot-react-mysql.onrender.com/api/likes/count/${blog.id}`);
                 return { ...blog, likes: likesResponse.data };
             }));
             setBlogs(blogsWithLikes);

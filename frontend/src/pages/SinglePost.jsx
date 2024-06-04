@@ -23,9 +23,9 @@ export default function SinglePost() {
     const getBlogPost = async () => {
         try {
             setIsLoading(true);
-            const response = await axios.get(`http://localhost:8080/api/blog/${id}`);
+            const response = await axios.get(`https://revamped-blog-spring-boot-react-mysql.onrender.com/api/blog/${id}`);
             setBlog(response.data);
-            const likesResponse = await axios.get(`http://localhost:8080/api/likes/count/${id}`);
+            const likesResponse = await axios.get(`https://revamped-blog-spring-boot-react-mysql.onrender.com/api/likes/count/${id}`);
             setLikeCount(likesResponse.data);
             setIsLoading(false);
         } catch (error) {
@@ -57,7 +57,7 @@ export default function SinglePost() {
 
         if (result.isConfirmed) {
             try {
-                const response = await axios.delete(`http://localhost:8080/api/admin/blog/${id}`, {
+                const response = await axios.delete(`https://revamped-blog-spring-boot-react-mysql.onrender.com/api/admin/blog/${id}`, {
                     headers: { 'Authorization': `Bearer ${Cookies.get('jwt')}` }
                 });
                 toast.success(response.data);

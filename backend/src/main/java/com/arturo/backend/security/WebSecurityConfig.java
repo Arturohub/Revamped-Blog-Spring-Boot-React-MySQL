@@ -43,19 +43,21 @@ public class WebSecurityConfig {
 
     @Bean
     SecurityFilterChain SecurityFilterChain(HttpSecurity httpSecurity) throws Exception {
-        httpSecurity.csrf(csrf -> csrf.disable()) //activarlo antes de production
+        httpSecurity.csrf(csrf -> csrf.disable())
             .cors(c -> c.configurationSource(corsConfigurationSource()))
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authorizeHttpRequests((authorizeRequests) -> authorizeRequests
-                .requestMatchers("/h2-console/**", "/api/auth/login", "/api/auth/register", "api/blog/**", "api/likes/**" ).permitAll()
+                .requestMatchers("/api/auth/login", "/api/auth/register", "api/blog/**", "api/likes/**" ).permitAll()
                 .requestMatchers("/api/admin/**").hasRole("ADMIN")
                 .requestMatchers("/api/user/**").hasRole("USER")
                 .requestMatchers("/api/auth/logout").permitAll()
-                .requestMatchers("/api/auth/users").permitAll() //eliminar antes prod
                 .anyRequest().authenticated())
                 .formLogin(httpSecurityFormLoginConfigurer -> {
                     httpSecurityFormLoginConfigurer.loginPage("/wtf").permitAll();
-                }).headers(headers -> headers.frameOptions().sameOrigin())
+                })
+                .requiresChannel(channel -> channel
+                    .anyRequest().requiresSecure())
+                .headers(headers -> headers.frameOptions().sameOrigin())
                 .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
         return httpSecurity.build();
     }
@@ -76,7 +78,7 @@ public class WebSecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
       CorsConfiguration configuration = new CorsConfiguration();
-      configuration.setAllowedOrigins(Arrays.asList("http://localhost:5173"));
+      configuration.setAllowedOrigins(Arrays.asList("https://arturosblog-ty61.onrender.com"));
       configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
       configuration.setAllowedHeaders(Arrays.asList("Authorization", "Content-Type"));
       configuration.setAllowCredentials(true);

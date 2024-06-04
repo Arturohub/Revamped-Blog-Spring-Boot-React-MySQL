@@ -65,7 +65,7 @@ export default function CreatePost(){
                 };
             }
 
-            const response = await axios.post("http://localhost:8080/api/admin/blog", 
+            const response = await axios.post("https://revamped-blog-spring-boot-react-mysql.onrender.com/api/admin/blog", 
             { title, subtitle, content, image, category },
             { headers }
             );

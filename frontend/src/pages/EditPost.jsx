@@ -30,7 +30,7 @@ export default function EditPost() {
   const getBlog = async () => {
     setIsLoading(true);
     try {
-      const response = await axios.get(`http://localhost:8080/api/blog/${id}`);
+      const response = await axios.get(`https://revamped-blog-spring-boot-react-mysql.onrender.com/api/blog/${id}`);
       setBlog({
         title: response.data.title,
         subtitle: response.data.subtitle,
@@ -49,7 +49,7 @@ export default function EditPost() {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await axios.put(`http://localhost:8080/api/admin/blog/${id}`, blog, {headers:
+      const response = await axios.put(`https://revamped-blog-spring-boot-react-mysql.onrender.com/api/admin/blog/${id}`, blog, {headers:
         {'Authorization': `Bearer ${Cookies.get('jwt')}`}
       });
       toast.success(response.data);
