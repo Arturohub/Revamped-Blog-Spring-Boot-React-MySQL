@@ -1,19 +1,19 @@
-C:\Users\Sacro\Downloads\backend\backend\src\main\java\com\arturo\backend\BackendApplication.java
-C:\Users\Sacro\Downloads\backend\backend\src\main\java\com\arturo\backend\controllers\auth\AuthController.java
-C:\Users\Sacro\Downloads\backend\backend\src\main\java\com\arturo\backend\controllers\blog\LikesController.java
-C:\Users\Sacro\Downloads\backend\backend\src\main\java\com\arturo\backend\controllers\blog\PostsController.java
-C:\Users\Sacro\Downloads\backend\backend\src\main\java\com\arturo\backend\DTO\auth\LoginForm.java
-C:\Users\Sacro\Downloads\backend\backend\src\main\java\com\arturo\backend\DTO\auth\LoginRequest.java
-C:\Users\Sacro\Downloads\backend\backend\src\main\java\com\arturo\backend\DTO\auth\LoginResponse.java
-C:\Users\Sacro\Downloads\backend\backend\src\main\java\com\arturo\backend\DTO\auth\MyUser.java
-C:\Users\Sacro\Downloads\backend\backend\src\main\java\com\arturo\backend\DTO\blog\Likes.java
-C:\Users\Sacro\Downloads\backend\backend\src\main\java\com\arturo\backend\DTO\blog\Posts.java
-C:\Users\Sacro\Downloads\backend\backend\src\main\java\com\arturo\backend\jwt\JwtAuthFilter.java
-C:\Users\Sacro\Downloads\backend\backend\src\main\java\com\arturo\backend\repository\auth\MyUserRepository.java
-C:\Users\Sacro\Downloads\backend\backend\src\main\java\com\arturo\backend\repository\blog\LikesRepository.java
-C:\Users\Sacro\Downloads\backend\backend\src\main\java\com\arturo\backend\repository\blog\PostsRepository.java
-C:\Users\Sacro\Downloads\backend\backend\src\main\java\com\arturo\backend\security\WebSecurityConfig.java
-C:\Users\Sacro\Downloads\backend\backend\src\main\java\com\arturo\backend\service\auth\JwtService.java
-C:\Users\Sacro\Downloads\backend\backend\src\main\java\com\arturo\backend\service\auth\MyUserDetailsService.java
-C:\Users\Sacro\Downloads\backend\backend\src\main\java\com\arturo\backend\service\blog\LikesService.java
-C:\Users\Sacro\Downloads\backend\backend\src\main\java\com\arturo\backend\service\blog\PostsService.java
+C:\Users\Sacro\Desktop\Projectos Programacion\Revamped Blog Spring Boot + React + MySQL\backend\src\main\java\com\arturo\backend\BackendApplication.java
+C:\Users\Sacro\Desktop\Projectos Programacion\Revamped Blog Spring Boot + React + MySQL\backend\src\main\java\com\arturo\backend\controllers\auth\AuthController.java
+C:\Users\Sacro\Desktop\Projectos Programacion\Revamped Blog Spring Boot + React + MySQL\backend\src\main\java\com\arturo\backend\controllers\blog\LikesController.java
+C:\Users\Sacro\Desktop\Projectos Programacion\Revamped Blog Spring Boot + React + MySQL\backend\src\main\java\com\arturo\backend\controllers\blog\PostsController.java
+C:\Users\Sacro\Desktop\Projectos Programacion\Revamped Blog Spring Boot + React + MySQL\backend\src\main\java\com\arturo\backend\DTO\auth\LoginForm.java
+C:\Users\Sacro\Desktop\Projectos Programacion\Revamped Blog Spring Boot + React + MySQL\backend\src\main\java\com\arturo\backend\DTO\auth\LoginRequest.java
+C:\Users\Sacro\Desktop\Projectos Programacion\Revamped Blog Spring Boot + React + MySQL\backend\src\main\java\com\arturo\backend\DTO\auth\LoginResponse.java
+C:\Users\Sacro\Desktop\Projectos Programacion\Revamped Blog Spring Boot + React + MySQL\backend\src\main\java\com\arturo\backend\DTO\auth\MyUser.java
+C:\Users\Sacro\Desktop\Projectos Programacion\Revamped Blog Spring Boot + React + MySQL\backend\src\main\java\com\arturo\backend\DTO\blog\Likes.java
+C:\Users\Sacro\Desktop\Projectos Programacion\Revamped Blog Spring Boot + React + MySQL\backend\src\main\java\com\arturo\backend\DTO\blog\Posts.java
+C:\Users\Sacro\Desktop\Projectos Programacion\Revamped Blog Spring Boot + React + MySQL\backend\src\main\java\com\arturo\backend\jwt\JwtAuthFilter.java
+C:\Users\Sacro\Desktop\Projectos Programacion\Revamped Blog Spring Boot + React + MySQL\backend\src\main\java\com\arturo\backend\repository\auth\MyUserRepository.java
+C:\Users\Sacro\Desktop\Projectos Programacion\Revamped Blog Spring Boot + React + MySQL\backend\src\main\java\com\arturo\backend\repository\blog\LikesRepository.java
+C:\Users\Sacro\Desktop\Projectos Programacion\Revamped Blog Spring Boot + React + MySQL\backend\src\main\java\com\arturo\backend\repository\blog\PostsRepository.java
+C:\Users\Sacro\Desktop\Projectos Programacion\Revamped Blog Spring Boot + React + MySQL\backend\src\main\java\com\arturo\backend\security\WebSecurityConfig.java
+C:\Users\Sacro\Desktop\Projectos Programacion\Revamped Blog Spring Boot + React + MySQL\backend\src\main\java\com\arturo\backend\service\auth\JwtService.java
+C:\Users\Sacro\Desktop\Projectos Programacion\Revamped Blog Spring Boot + React + MySQL\backend\src\main\java\com\arturo\backend\service\auth\MyUserDetailsService.java
+C:\Users\Sacro\Desktop\Projectos Programacion\Revamped Blog Spring Boot + React + MySQL\backend\src\main\java\com\arturo\backend\service\blog\LikesService.java
+C:\Users\Sacro\Desktop\Projectos Programacion\Revamped Blog Spring Boot + React + MySQL\backend\src\main\java\com\arturo\backend\service\blog\PostsService.java
