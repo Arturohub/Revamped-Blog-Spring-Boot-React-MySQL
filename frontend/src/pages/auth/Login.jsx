@@ -58,9 +58,6 @@ export default function Login() {
                 <div className="text-center mt-8">
                     <Link to="/register" className="text-sm cursor-pointer text-blue-500 underline hover:text-blue-700 focus:outline-none focus:text-blue-700">You don't have an account? Register here!</Link>
                 </div>
-                <div className="text-center mt-8">
-                    <Link to="/recoverpass" className="text-sm cursor-pointer text-blue-500 underline hover:text-blue-700 focus:outline-none focus:text-blue-700">You forgot your password? Click here!</Link>
-                </div>
             </form>
 
         </div>
