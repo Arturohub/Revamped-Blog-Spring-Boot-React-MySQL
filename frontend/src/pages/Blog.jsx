@@ -63,7 +63,7 @@ export default function Blog() {
                 <input type="text" placeholder="Search blog posts..." value={searchQuery} onChange={handleSearch} className="border border-green-800 rounded-md px-4 py-2 w-full" />
             </div>
             {isLoading ? (
-                <p>Loading...Please, wait a bit, the database is free, so it takes some time for the blog posts to load...</p>
+                <p className="px-4 w-full">Loading...Please, wait a bit, the database is free, so it shuts down when there is inactivity and takes 50 seconds to come back to life. Sorry for the inconveniences...</p>
             ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
                     {noResults ? (

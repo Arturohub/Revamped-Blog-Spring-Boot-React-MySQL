@@ -29,17 +29,17 @@ export default function Navbar() {
         <div className="flex items-center justify-between bg-green-800 text-white p-4 lg:p-6">
             <div className="flex items-center">
                 <img src={Logo} alt="LogoNavbar" className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 cursor-pointer rounded-xl" />
-                <Link to="/" className="ml-4 font-bold text-md lg:text-2xl md:text-xl">Home</Link>
-                <Link to="/blog" className="ml-4 font-bold text-md lg:text-2xl md:text-xl">Blog</Link>
+                <Link to="/" className="ml-4 font-bold text-lg lg:text-2xl md:text-xl">Home</Link>
+                <Link to="/blog" className="ml-4 font-bold text-lg lg:text-2xl md:text-xl">Blog</Link>
                 {user === "Arturo" && (
-                    <Link to="/blog/create" className="ml-4 font-bold text-md lg:text-2xl md:text-xl">Create Post</Link>
+                    <Link to="/blog/create" className="ml-4 font-bold text-lg lg:text-2xl md:text-xl">Create Post</Link>
                 )}
             </div>
             {user && (
-                <Link to="/" onClick={logout} className="ml-4 font-bold text-md lg:text-2xl md:text-xl">Logout</Link>
+                <Link to="/" onClick={logout} className="ml-4 font-bold text-lg lg:text-2xl md:text-xl">Logout</Link>
             )}
             {!user && (
-                <Link to="/login" className="ml-4 font-bold text-md lg:text-2xl md:text-xl">Login</Link>
+                <Link to="/login" className="ml-4 font-bold text-lg lg:text-2xl md:text-xl">Login</Link>
             )}
         </div>
     );
