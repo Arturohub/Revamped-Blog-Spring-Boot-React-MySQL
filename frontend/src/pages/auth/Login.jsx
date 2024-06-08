@@ -59,7 +59,7 @@ export default function Login() {
                     <Link to="/register" className="text-sm cursor-pointer text-blue-500 underline hover:text-blue-700 focus:outline-none focus:text-blue-700">You don't have an account? Register here!</Link>
                 </div>
                 {isLoading ? (
-                    <div className="text-center text-gray-600 mb-4">Loading message...</div>
+                    <div className="text-center text-gray-600 mb-4 mt-12">Sorry, in case the loggin gets stuck is because the database is free and shuts down with inactivity. As it takes 50s to come back to life, please go to blog and when the blog posts are loaded, you can log in normally. Sorry for the inconveniences...</div>
                 ) : null}
             </form>
 
